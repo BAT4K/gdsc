@@ -1,1 +1,1 @@
-web: node server/server.js
+web: node submission-system/server/server.js
