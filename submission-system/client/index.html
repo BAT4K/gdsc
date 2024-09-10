@@ -8,11 +8,32 @@
     <link rel="icon" type="image/png" href="favicon.png">
     <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
     <title>GDSC Dev Team Recruitments</title>
+    <style>
+        /* Adjust container padding and max-width for small screens */
+        @media (max-width: 640px) {
+            .container {
+                max-width: 90%; /* Make the container narrower on small devices */
+                padding: 30px;  /* Decreased padding */
+                margin-top: 2rem; /* Adjust top margin */
+                margin-bottom: 2rem; /* Adjust bottom margin */
+            }
+        }
+
+        /* Adjust container padding and max-width for larger screens */
+        @media (min-width: 641px) {
+            .container {
+                max-width: 80%; /* Set a narrower width for larger screens */
+                padding: 40px; /* Slightly decreased padding */
+                margin-top: 2rem; /* Adjust top margin */
+                margin-bottom: 2rem; /* Adjust bottom margin */
+            }
+        }
+    </style>
 </head>
 
 <body class="bg-gradient-to-r from-blue-50 via-blue-100 to-blue-200 text-gray-800 min-h-screen flex items-center justify-center">
 
-    <div class="container mx-auto max-w-4xl p-6 bg-white shadow-lg rounded-lg font-sans">
+    <div class="container mx-auto bg-white shadow-lg rounded-lg font-sans">
         <!-- Header -->
         <h1 class="text-4xl font-extrabold text-center text-gray-900 mb-6">GDSC SNIoE Dev Team Recruitments</h1>
 
