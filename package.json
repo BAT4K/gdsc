@@ -4,8 +4,8 @@
   "description": "A submission system with a Node.js backend, MongoDB database, and a simple HTML frontend.",
   "main": "submission-system/server/server.js",
   "scripts": {
-    "start": "node server/server.js",
-    "dev": "nodemon server/server.js"
+    "start": "node submission-system/server/server.js",
+    "dev": "nodemon submission-system/server/server.js"
   },
   "dependencies": {
     "dotenv": "^16.4.5",
