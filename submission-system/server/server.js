@@ -4,6 +4,7 @@ const dotenv = require('dotenv');
 const cors = require('cors');
 const path = require('path');
 
+// Load environment variables
 dotenv.config();
 
 const app = express();
@@ -12,10 +13,18 @@ const PORT = process.env.PORT || 5000;
 // Middleware
 app.use(cors());
 app.use(express.json());
+
+// Serve static files for the client
 app.use(express.static(path.join(__dirname, '../client')));
 
 // MongoDB connection
-mongoose.connect(process.env.MONGO_URI, {
+const mongoURI = process.env.MONGO_URI;
+if (!mongoURI) {
+    console.error('MONGO_URI is not defined in .env file');
+    process.exit(1);
+}
+
+mongoose.connect(mongoURI, {
     useNewUrlParser: true,
     useUnifiedTopology: true
 }).then(() => {
@@ -28,11 +37,12 @@ mongoose.connect(process.env.MONGO_URI, {
 const submissionRoutes = require('./routes/submissions');
 app.use('/api', submissionRoutes);
 
-// Serve static files for client
+// Serve index.html
 app.get('/', (req, res) => {
     res.sendFile(path.join(__dirname, '../client/index.html'));
 });
 
+// Start the server
 app.listen(PORT, () => {
     console.log(`Server running on port ${PORT}`);
 });
