@@ -10,9 +10,13 @@ dotenv.config();
 const app = express();
 const PORT = process.env.PORT || 5000;
 
+// Log environment variables for debugging
+console.log('MONGO_URI:', process.env.MONGO_URI);
+console.log('PORT:', PORT);
+
 // Middleware
 app.use(cors({
-    origin: '*', // Allows requests from any origin. Change this to specific domains if needed.
+    origin: '*', // Adjust this as needed
     methods: ['GET', 'POST', 'PUT', 'DELETE', 'OPTIONS'],
     allowedHeaders: ['Content-Type', 'Authorization']
 }));
