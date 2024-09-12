@@ -2,16 +2,13 @@ const express = require('express');
 const mongoose = require('mongoose');
 const cors = require('cors');
 const path = require('path');
-
-// Load environment variables
-// const dotenv = require('dotenv');
-// dotenv.config();
+require('dotenv').config(); // Load environment variables from .env file
 
 const app = express();
 const PORT = process.env.PORT || 5000;
 
-// MongoDB URI
-const mongoURI = process.env.MONGO_URI || 'mongodb://localhost:27017/submissionSystem';
+// MongoDB URI from environment variable or fallback to local
+const mongoURI = process.env.MONGO_URI;
 
 if (!mongoURI) {
     console.error('MONGO_URI is not defined in .env file');
@@ -27,14 +24,15 @@ app.use(express.json());
 // Serve static files for the client
 app.use(express.static(path.join(__dirname, '../client')));
 
-// MongoDB connection
+// MongoDB connection using Atlas URI
 mongoose.connect(mongoURI, {
     useNewUrlParser: true,
     useUnifiedTopology: true
 }).then(() => {
-    console.log('MongoDB connected');
+    console.log('Connected to MongoDB Atlas');
 }).catch(err => {
     console.error('MongoDB connection error:', err);
+    process.exit(1); // Exit process on MongoDB connection failure
 });
 
 // Routes
