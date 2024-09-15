@@ -1,6 +1,5 @@
 # GDSC SNIoE Dev Team Recruitments
 
-
 ## Overview
 
 This project is a submission and display system for the GDSC Dev Team recruitment task. It allows users to submit tasks, stores the submissions in MongoDB, and displays them on a user-friendly page. The project uses Node.js for the backend, MongoDB for the database, and Vercel for deployment.
@@ -25,10 +24,27 @@ You can view the project live here: https://gdsc-alpha.vercel.app/
 - Live data fetching from MongoDB Atlas.
 
 ## How to Run Locally
+
 ### Prerequisites
 - Node.js installed on your machine.
 - MongoDB Atlas account or a local MongoDB instance.
 
+### Steps
+
+1. Clone the Repository
+
+      ```bash
+   git clone https://github.com/BAT4K/gdsc.git
+
+2. Navigate to the project directory
+
+   ```bash
+   cd submission-system
+
+3. **Install Dependencies**
+
+   ```bash
+   npm install      
 
 ### Setup
 
