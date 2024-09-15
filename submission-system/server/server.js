@@ -31,9 +31,10 @@ mongoose.connect(mongoURI, {
 }).then(() => {
     console.log('Connected to MongoDB Atlas');
 }).catch(err => {
-    console.error('MongoDB connection error:', err);
+    console.error('MongoDB connection error:', err.message); // Log just the error message
     process.exit(1); // Exit process on MongoDB connection failure
 });
+
 
 // Routes
 const submissionRoutes = require('./routes/submissions');
