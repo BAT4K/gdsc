@@ -1,6 +1,6 @@
-# GDSC Dev Team Recruitments
+# GDSC SNIoE Dev Team Recruitments
 
-Welcome to the GDSC Dev Team recruitment test project! This project involves creating a full-stack application where users can submit their entries, and submissions are displayed in a user-friendly format.
+This project is a submission and display system for the GDSC Dev Team recruitment task. It allows users to submit tasks, stores the submissions in MongoDB, and displays them on a user-friendly page. The project uses Node.js for the backend, MongoDB for the database, and Vercel for deployment.
 
 ## Features
 
