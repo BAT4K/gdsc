@@ -51,12 +51,12 @@ You can view the project live here: https://gdsc-alpha.vercel.app/
 - Create a `.env` file in the root of the project.
 - Add your MongoDB URI (from MongoDB Atlas) to the `.env` file:
    
-     ```perl
-     MONGO_URI=mongodb+srv://<your_username>:<your_password>@cluster.mongodb.net/myDatabase
+   ```perl
+   MONGO_URI=mongodb+srv://<your_username>:<your_password>@cluster.mongodb.net/myDatabase
 
 5. **Start the server:**
 
-    ```bash
+   ```bash
    npm start
 
 6. **Open your browser and go to `http://localhost:5000` to view the application.**
