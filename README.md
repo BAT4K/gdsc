@@ -31,21 +31,29 @@ You can view the project live here: https://gdsc-alpha.vercel.app/
 
 ### Steps
 
-1. Clone the Repository
+1. **Clone the repository:**
 
       ```bash
    git clone https://github.com/BAT4K/gdsc.git
 
-2. Navigate to the project directory
+2. **Navigate to the project directory:**
 
    ```bash
    cd submission-system
 
-3. **Install Dependencies**
+3. **Install dependencies:**
 
    ```bash
-   npm install      
+   npm install
+   
+4. **Set up environment variables:**
+   
+- Create a `.env` file in the root of the project.
+- Add your MongoDB URI (from MongoDB Atlas) to the `.env` file:
+  ```perl
+  MONGO_URI=mongodb+srv://<your_username>:<your_password>@cluster.mongodb.net/myDatabase
 
+  
 ### Setup
 
 1. **Clone the Repository**
