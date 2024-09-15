@@ -35,7 +35,6 @@ mongoose.connect(mongoURI, {
     process.exit(1); // Exit process on MongoDB connection failure
 });
 
-
 // Routes
 const submissionRoutes = require('./routes/submissions');
 app.use('/api', submissionRoutes);
