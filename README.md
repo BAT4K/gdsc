@@ -1,28 +1,34 @@
 # GDSC SNIoE Dev Team Recruitments
 
+
+## Overview
+
 This project is a submission and display system for the GDSC Dev Team recruitment task. It allows users to submit tasks, stores the submissions in MongoDB, and displays them on a user-friendly page. The project uses Node.js for the backend, MongoDB for the database, and Vercel for deployment.
+
+## Deployed Link
+
+You can view the project live here: https://gdsc-alpha.vercel.app/
+
+## Tools Used
+
+- **Node.js**: For the backend server.
+- **Express.js**: Web framework for Node.js.
+- **MongoDB Atlas**: For storing submissions.
+- **Vercel**: Deployment platform for hosting the application.
+- **TailwindCSS**: Utility-first CSS framework for styling the frontend.
 
 ## Features
 
-- **Submission Form:** Users can submit their text entries through a form.
-- **Display Submissions:** All submitted entries are displayed in a list format.
-- **Delete Submissions:** Each submission can be removed using a delete button.
-- **Responsive Design:** The application is styled using TailwindCSS to ensure responsiveness and a polished look.
-- **Backend Integration:** The backend is built using Node.js and Express, and submissions are stored in a MongoDB database.
+- Submission form for users to add their tasks.
+- Submissions are displayed in a user-friendly format with delete functionality.
+- Responsive design for mobile and desktop views.
+- Live data fetching from MongoDB Atlas.
 
-## Technology Stack
-
-- **Frontend:** HTML, CSS (TailwindCSS), JavaScript
-- **Backend:** Node.js, Express
-- **Database:** MongoDB (using Mongoose)
-- **Deployment:** Heroku
-
-## Installation
-
+## How to Run Locally
 ### Prerequisites
+- Node.js installed on your machine.
+- MongoDB Atlas account or a local MongoDB instance.
 
-- Node.js and npm installed
-- MongoDB instance (either local or cloud-based, e.g., MongoDB Atlas)
 
 ### Setup
 
